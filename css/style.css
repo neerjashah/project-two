@@ -1,0 +1,228 @@
+/*GLOBAL STYLES */
+
+/*HORIZONTAL SCROLLING IMAGES */
+/*
+.marquee {
+  display: flex;
+  margin: 0px;
+  width: 100vw;
+  height: 23vh;
+  overflow: hidden;
+  color: white;
+}
+
+.marquee:before,
+.marquee:after {
+  position: absolute;
+  top: 0;
+  width: 10rem;
+  height: 100%;
+  content: "";
+  z-index: 1;
+}
+
+.marque:before {
+  left: 0;
+  background: linear-gradient(to right, black 0%, transparent 100%);
+}
+.marque:after {
+  right: 0;
+  background: linear-gradient(to left, black 0%, transparent 100%);
+}
+
+.marquee-content {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  animation: scrolling 18s linear infinite;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-180vw);
+  }
+}
+
+.marquee-content li {
+  box-shadow: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px solid teal;
+  width: 20vw;
+  height: 15vh;
+  margin: auto;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.marquee-content li img {
+  width: 20vw;
+  height: 15vh;
+}
+*/
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+
+  background-color: black;
+}
+h2 {
+  color: yellowgreen;
+  font-size: 19px;
+  letter-spacing: 2px;
+}
+h1 {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+/*HEADING TEXT OVER IMAGE*/
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 8vw;
+  letter-spacing: 7px;
+  line-height: 1.2;
+}
+
+/* Centered text */
+.subcentered {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3vw;
+  letter-spacing: 5px;
+  line-height: 1.2;
+}
+/*WORLD MAP CARD*/
+.card {
+  box-shadow: 0 0 10px 0 rgb(176, 233, 61);
+  border-radius: 20px;
+  background-color: black;
+  overflow: hidden;
+  margin: auto;
+  max-width: 85vw;
+  margin-bottom: 60px;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .card {
+    max-width: 70vw;
+  }
+}
+
+header {
+  padding: 0;
+  width: 100%;
+  overflow: auto;
+}
+
+header figure img {
+  width: 100%;
+  padding: 0;
+}
+
+/*HOME PARAGRAPH STYLE*/
+article p {
+  color: white;
+  font-size: 14px;
+}
+
+#home-page-text {
+  padding: 30px;
+  margin: auto;
+  max-width: 70vw;
+}
+
+/*#world {
+  padding: 30px;
+  margin: auto:
+  max-width: 200px;
+}*/
+
+/*BUTTON CLASS FOR HOME BUTTONS*/
+a.button1 {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid rgb(58, 99, 25);
+  border-radius: 25px;
+  margin: 0 03sem 0.3sem 0;
+  box-sizing: content-box;
+  text-decoration: none;
+  color: white;
+
+  font-weight: 300;
+  text-align: center;
+  transition: all 0.2s;
+  background-color: rgb(58, 99, 25);
+  box-shadow: ;
+  overflow: hidden;
+}
+
+/*WEBDESIGN FOR BUTTONS*/
+@media (min-width: 768px) {
+  #buttons {
+    justify-content: space-evenly;
+    align-items: flex-end;
+    overflow: auto;
+    margin: auto;
+    /*margin-left: 100px;
+    margin-right: 100px;*/
+    overflow: hidden;
+    padding-bottom: 150px;
+  }
+
+  /*--------------------------------*/
+
+  #buttons a {
+    font-size: 2vw;
+    padding: 1.5vw;
+  }
+
+  a.button1:hover {
+    margin: auto;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(30, 156, 30);
+    border: 0.1em solid rgb(25, 175, 25);
+    box-shadow: 0 0 15px 0 YELLOWGREEN;
+  }
+
+  .grid4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+  }
+  .button1.grid4 {
+    height: 100%;
+  }
+}
+/* ---------------------------------------------------*/
+
+#buttons div {
+  font-size: 17px;
+  padding: 10px;
+  text-align: center;
+}
+
+#buttons {
+  color: white;
+}
