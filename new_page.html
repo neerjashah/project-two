@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Two</title>
+    <!-- link to style.css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- link to script.js - make sure to defer -->
+    <script src="./js/script.js" defer></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Montserrat:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <nav>
+    <a href="index.html">
+      <img id="logo" src="./images/logo.PNG" alt="logo" />
+    </a>
+
+    <img src="./images/hamburger_icon.jpg" alt="Menu" id="hamburger" />
+    <div id="overlaymenu"></div>
+    <ul id="menu">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="new_page.html">GALLERY</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <style>
+      #WATER {
+        opacity: 60%;
+      }
+      #gallerycontainer {
+        height: auto;
+        width: 100%;
+      }
+    </style>
+    <div id="gallerycontainer" class="container">
+      <img
+        id="WATER"
+        src="./images/WATER.PNG"
+        alt="Endangered Wildlife"
+        width="100%"
+      />
+      <div class="subcentered">CLICK ON THE IMAGE TO LEARN MORE</div>
+      <div class="centered">PHOTO GALLERY</div>
+    </div>
+  </header>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 10px 10px 10px;
+      font-family: Arial;
+    }
+
+    .header {
+      text-align: center;
+      padding: 32px;
+    }
+
+    .row {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 7px;
+    }
+
+    /* Create four equal columns that sits next to each other */
+    .column {
+      -ms-flex: 50%; /* IE10 */
+      flex: 50%;
+      max-width: 50%;
+      padding: 0 7px;
+    }
+
+    .column img {
+      margin-top: 20px;
+      vertical-align: middle;
+      width: 100%;
+    }
+    img {
+      border-radius: 5px;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+  <body id="gallery">
+    <!-- Header -->
+
+    <style>
+      #hover:hover {
+        opacity: 50%;
+      }
+      #piclink {
+        padding: 0;
+      }
+    </style>
+
+    <article>
+      <div class="row">
+        <div class="column">
+          <a id="piclink" href="Sea_turtle_page.html">
+            <img
+              id="hover"
+              src="/images/turtlescroll.PNG"
+              style="width: 100%"
+            />
+          </a>
+          <a id="piclink" href="red_panda_page.html">
+            <img id="hover" src="/images/red panda.jpg" style="width: 100%" />
+          </a>
+
+          <img src="/images/whale.jpg" style="width: 100%" />
+          <img src="/images/tiger.jpg" style="width: 100%" />
+          <img src="/images/tuna.jpg" style="width: 100%" />
+          <img src="/images/lion.jpg" style="width: 100%" />
+        </div>
+        <div class="column">
+          <a id="piclink" href="lion_page.html">
+            <img id="hover" src="/images/lionscroll.PNG" style="width: 100%" />
+          </a>
+
+          <a id="piclink" href="cham_page.html">
+            <img id="hover" src="/images/cham-header.jpg" style="width: 100%" />
+          </a>
+
+          <img src="/images/elephant.jpg" style="width: 100%" />
+          <img src="/images/fish.jpg" style="width: 100%" />
+          <img src="/images/dugong.jpg" style="width: 100%" />
+          <img src="/images/polarbear.jpg" style="width: 100%" />
+        </div>
+      </div>
+    </article>
+    <!-- Photo Grid -->
+  </body>
+</html>
