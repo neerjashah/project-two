@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Two</title>
+    <!-- link to style.css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- link to script.js - make sure to defer -->
+    <script src="./js/script.js" defer></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Montserrat:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <nav>
+    <a href="index.html">
+      <img id="logo" src="./images/logo.PNG" alt="logo" />
+    </a>
+
+    <img src="./images/hamburger_icon.jpg" alt="Menu" id="hamburger" />
+    <div id="overlaymenu"></div>
+    <ul id="menu">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="new_page.html">GALLERY</a></li>
+      <li><a href="">CONTACT</a></li>
+      <li>
+        <a href="faq.html">FAQ</a>
+      </li>
+    </ul>
+  </nav>
+<style>
+    #leaves {
+        opacity: 55%;
+    }
+</style>
+  <header>
+    <div class="container">
+      <img id=leaves
+        src="./images/faq.jpg"
+        alt="Endangered Wildlife"
+        width="100%"
+      />
+      <div class="subcentered">FREQUENTLY ASKED QUESTIONS</div>
+      <div class="centered">FAQ</div>
+    </div>
+  </header>
+
+  <style>
+    .collapsible {
+      background-color: rgb(61, 100, 29);
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 20px;
+    }
+
+    .active,
+    .collapsible:hover {
+      background-color: rgb(88, 153, 26);
+    }
+
+    .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      color: white;
+      background-color: #1c534388;
+    }
+
+    #faqdiv {
+      margin-bottom: 200px;
+      margin-top: 0px;
+    }
+  </style>
+  <article>
+    <h2>Frequently Asked Questions</h2>
+  <div id="faqdiv">
+    <p></p>
+    <button type="button" class="collapsible">
+      Q: What makes a species endangered?
+    </button>
+    <div class="content">
+      <p>
+        A: An endangered species is a type of organism that is threatened by
+        extinction. Species become endangered for two main reasons: loss of
+        habitat and loss of genetic variation.
+      </p>
+    </div>
+    <p></p>
+    <button type="button" class="collapsible">Q: How can I help?</button>
+    <div class="content">
+      <p>
+        A: There are many ways that you can help endangered species. One way is
+        to practice a vegan/vegetarian diet to reduce your meat consumption.
+        Meat consumption is not sustainable and livestock grazing is responsible
+        for 80% of the Amazon's deforestation! Another way that you can help is
+        to donate to wildlife organizations. Lastly, you can reduce your plastic
+        waste!
+      </p>
+    </div>
+
+    <p></p>
+    <button type="button" class="collapsible">
+      Q: What makes a species extinct?
+    </button>
+    <div class="content">
+      <p>
+        A: A species is declared extinct after many years of not being spotted.
+        Because it takes so long to define an entire species as extinct, it is
+        probable that there are many species already gone that we are unaware
+        of.
+      </p>
+    </div>
+    <p></p>
+    <button type="button" class="collapsible">Q: What do Rangers do?</button>
+    <div class="content">
+      <p>
+        A: Rangers are on the frontlines of conservation to protect some of the
+        world's most endangered species like tigers, elephants and rhinos.
+      </p>
+    </div>
+    <p></p>
+    <button type="button" class="collapsible">
+      Q:How many species are at risk of extinction?
+    </button>
+    <div class="content">
+      <p>
+        A:Scientists are not sure, but it is estimated that atleast 1 million
+        species are at risk of extinction. As many as 30 to 50 percent of all
+        species are possibly heading toward extinction by mid-century.
+      </p>
+      <p></p>
+    </div>
+  </div>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+</html>
