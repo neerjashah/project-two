@@ -19,154 +19,171 @@
     />
   </head>
 
-  <nav>
-    <a href="index.html">
-      <img id="logo" src="./images/logo.PNG" alt="logo" />
-    </a>
+  <div id="navbar">
+    <nav>
+      <a href="index.html">
+        <img id="logo" src="./images/logo.PNG" alt="logo" />
+      </a>
 
-    <img src="./images/hamburger_icon.jpg" alt="Menu" id="hamburger" />
-    <div id="overlaymenu"></div>
-    <ul id="menu">
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="new_page.html">GALLERY</a></li>
-      <li><a href="#">CONTACT</a></li>
-      <li>
-        <a href="faq.html">FAQ</a>
-      </li>
-    </ul>
-  </nav>
+      <img src="./images/hamburger_icon.jpg" alt="Menu" id="hamburger" />
+      <div id="overlaymenu"></div>
+      <ul id="menu">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="new_page.html">GALLERY</a></li>
+        <li><a href="sources.html">SOURCES</a></li>
+        <li>
+          <a href="faq.html">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 
-  <header>
+  <div class="content">
+    <header>
+      <style>
+        #WATER {
+          opacity: 60%;
+        }
+        #gallerycontainer {
+          height: auto;
+          width: 100%;
+        }
+      </style>
+      <div id="gallerycontainer" class="container">
+        <img
+          id="WATER"
+          src="./images/WATER.PNG"
+          alt="Endangered Wildlife"
+          width="100%"
+        />
+        <div class="subcentered">CLICK ON THE IMAGE TO LEARN MORE</div>
+        <div class="centered">PHOTO GALLERY</div>
+      </div>
+    </header>
+
     <style>
-      #WATER {
-        opacity: 60%;
+      * {
+        box-sizing: border-box;
       }
-      #gallerycontainer {
-        height: auto;
-        width: 100%;
+
+      body {
+        margin: 10px 10px 10px;
+        font-family: Arial;
       }
-    </style>
-    <div id="gallerycontainer" class="container">
-      <img
-        id="WATER"
-        src="./images/WATER.PNG"
-        alt="Endangered Wildlife"
-        width="100%"
-      />
-      <div class="subcentered">CLICK ON THE IMAGE TO LEARN MORE</div>
-      <div class="centered">PHOTO GALLERY</div>
-    </div>
-  </header>
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+      .header {
+        text-align: center;
+        padding: 32px;
+      }
 
-    body {
-      margin: 10px 10px 10px;
-      font-family: Arial;
-    }
+      .row {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 7px;
+      }
 
-    .header {
-      text-align: center;
-      padding: 32px;
-    }
-
-    .row {
-      display: -ms-flexbox; /* IE10 */
-      display: flex;
-      -ms-flex-wrap: wrap; /* IE10 */
-      flex-wrap: wrap;
-      padding: 0 7px;
-    }
-
-    /* Create four equal columns that sits next to each other */
-    .column {
-      -ms-flex: 50%; /* IE10 */
-      flex: 50%;
-      max-width: 50%;
-      padding: 0 7px;
-    }
-
-    .column img {
-      margin-top: 20px;
-      vertical-align: middle;
-      width: 100%;
-    }
-    img {
-      border-radius: 5px;
-    }
-
-    /* Responsive layout - makes a two column-layout instead of four columns */
-    @media screen and (max-width: 800px) {
+      /* Create four equal columns that sits next to each other */
       .column {
-        -ms-flex: 50%;
+        -ms-flex: 50%; /* IE10 */
         flex: 50%;
         max-width: 50%;
+        padding: 0 7px;
       }
-    }
 
-    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px) {
-      .column {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
+      .column img {
+        margin-top: 20px;
+        vertical-align: middle;
+        width: 100%;
       }
-    }
-  </style>
-  <body id="gallery">
-    <!-- Header -->
+      img {
+        border-radius: 5px;
+      }
 
-    <style>
-      #hover:hover {
-        opacity: 50%;
+      /* Responsive layout - makes a two column-layout instead of four columns */
+      @media screen and (max-width: 800px) {
+        .column {
+          -ms-flex: 50%;
+          flex: 50%;
+          max-width: 50%;
+        }
       }
-      #piclink {
-        padding: 0;
+
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column {
+          -ms-flex: 100%;
+          flex: 100%;
+          max-width: 100%;
+        }
       }
     </style>
+    <body id="gallery">
+      <!-- Header -->
 
-    <article>
-      <div class="row">
-        <div class="column">
-          <a id="piclink" href="Sea_turtle_page.html">
-            <img
-              id="hover"
-              src="./images/turtlescroll.PNG"
-              style="width: 100%"
-            />
-          </a>
-          <a id="piclink" href="red_panda_page.html">
-            <img id="hover" src="./images/red panda.jpg" style="width: 100%" />
-          </a>
+      <style>
+        #hover:hover {
+          opacity: 50%;
+        }
+        #piclink {
+          padding: 0;
+        }
+      </style>
 
-          <img src="./images/whale.jpg" style="width: 100%" />
-          <img src="./images/tiger.jpg" style="width: 100%" />
-          <img src="./images/tuna.jpg" style="width: 100%" />
-          <img src="./images/lion.jpg" style="width: 100%" />
+      <article>
+        <div class="row">
+          <div class="column">
+            <a id="piclink" href="Sea_turtle_page.html">
+              <img
+                id="hover"
+                src="./images/turtlescroll.PNG"
+                style="width: 100%"
+              />
+            </a>
+            <a id="piclink" href="red_panda_page.html">
+              <img
+                id="hover"
+                src="./images/red panda.jpg"
+                style="width: 100%"
+              />
+            </a>
+
+            <img src="./images/whale.jpg" style="width: 100%" />
+            <img src="./images/tiger.jpg" style="width: 100%" />
+            <img src="./images/tuna.jpg" style="width: 100%" />
+            <img src="./images/lion.jpg" style="width: 100%" />
+          </div>
+          <div class="column">
+            <a id="piclink" href="lion_page.html">
+              <img
+                id="hover"
+                src="./images/lionscroll.PNG"
+                style="width: 100%"
+              />
+            </a>
+
+            <a id="piclink" href="cham_page.html">
+              <img
+                id="hover"
+                src="./images/cham-header.jpg"
+                style="width: 100%"
+              />
+            </a>
+
+            <img src="./images/giantpanda.jpg" style="width: 100%" />
+            <img src="./images/fish.jpg" style="width: 100%" />
+            <img src="./images/dugong.jpg" style="width: 100%" />
+            <img src="./images/polarbear.jpg" style="width: 100%" />
+          </div>
         </div>
-        <div class="column">
-          <a id="piclink" href="lion_page.html">
-            <img id="hover" src="./images/lionscroll.PNG" style="width: 100%" />
-          </a>
+      </article>
+      <!-- Photo Grid -->
+    </body>
 
-          <a id="piclink" href="cham_page.html">
-            <img
-              id="hover"
-              src="./images/cham-header.jpg"
-              style="width: 100%"
-            />
-          </a>
-
-          <img src="./images/giantpanda.jpg" style="width: 100%" />
-          <img src="./images/fish.jpg" style="width: 100%" />
-          <img src="./images/dugong.jpg" style="width: 100%" />
-          <img src="./images/polarbear.jpg" style="width: 100%" />
-        </div>
-      </div>
-    </article>
-    <!-- Photo Grid -->
-  </body>
+    <footer>
+      Contact Us: &nbsp Phone: 999-999-9999 &nbsp | &nbsp Email:
+      iloveanimals@gmail.com
+    </footer>
+  </div>
 </html>

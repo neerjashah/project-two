@@ -5,7 +5,7 @@
 /* Navbar Styles */
 
 nav img {
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 nav {
@@ -13,8 +13,37 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0px;
+  margin-bottom: 1px;
+  overflow: hidden;
+
   padding: 0px 0px 0px 0px;
+}
+
+#navbar {
+  box-shadow: 0px 10px 10px -5px rgba(160, 160, 160, 0.664);
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+#navbar {
+  background-color: black;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
 }
 
 #logo {
@@ -27,6 +56,7 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  margin-bottom: 0;
 }
 
 nav ul li a {
@@ -35,6 +65,8 @@ nav ul li a {
   font-weight: bold;
   letter-spacing: 4px;
   font-family: "poppins";
+  float: left;
+  display: block;
 }
 
 #hamburger {
@@ -52,10 +84,12 @@ nav ul li a {
     padding: 0 0px;
     color: white;
     background-color: none;
+    box-shadow: 0 0 0 0;
   }
 
   nav ul li {
     padding: 20px;
+    margin-top: 50px;
   }
 
   nav ul li a {
@@ -67,6 +101,8 @@ nav ul li a {
     display: block;
     height: 50px;
     width: auto;
+    margin-right: 20px;
+    margin-bottom: 0px;
   }
 
   #menu.active {
@@ -189,59 +225,96 @@ h1 {
   opacity: 65%;
 }
 
-.text {
-  color: white;
-  font-family: "poppins";
-  font-size: 6.5vw;
-  position: absolute;
-  top: 43%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  line-height: 40px;
-  white-space: nowrap;
-}
 @media (min-width: 768px) {
   .text {
-    font-size: 4vw;
+    color: white;
+    font-family: "poppins";
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 40px;
+    white-space: nowrap;
+    font-size: 2.5vw;
   }
+
   .text2 {
-    font-size: 2vw;
+    color: white;
+    font-family: "poppins";
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 2vh;
+    white-space: nowrap;
+    font-size: 1.5vw;
   }
+
   .text3 {
-    font-size: 1vw;
+    color: white;
+    font-family: "poppins";
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    white-space: nowrap;
+    font-size: 1.5vw;
   }
 }
 
-.text2 {
-  color: white;
-  font-family: "poppins";
-  font-size: 4vw;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  line-height: 2vh;
-  white-space: nowrap;
+@media (max-width: 767px) {
+  .text {
+    color: white;
+    font-family: "poppins";
+    font-size: 4.5vw;
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 40px;
+    white-space: nowrap;
+  }
+  .text2 {
+    color: white;
+    font-family: "poppins";
+    font-size: 3vw;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 2vh;
+    white-space: nowrap;
+  }
+  .text3 {
+    color: white;
+    font-family: "poppins";
+    font-size: 3vw;
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    white-space: nowrap;
+  }
 }
-.text3 {
-  color: white;
-  font-family: "poppins";
-  font-size: 4vw;
-  position: absolute;
-  top: 72%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  white-space: nowrap;
-}
+
 .container {
   margin-top: 30px;
 }
@@ -376,7 +449,6 @@ h1 {
 }
 @media (min-width: 767px) {
   .container {
-    height: ;
     overflow: hidden;
   }
 
@@ -396,6 +468,7 @@ header {
   padding: 0;
   width: 100%;
   overflow: auto;
+  margin-top: 0px;
 }
 
 header figure img {
@@ -518,9 +591,21 @@ article h2 {
 }
 /*Footer Styles */
 footer {
-  background: green;
+  background: rgb(70, 138, 31);
   color: white;
+  font-weight: bolder;
   padding: 20px 20px;
+  margin-top: 100px;
+  text-align: left;
+  font-size: 2vw;
+  letter-spacing: 2px;
+}
+
+@media (min-width: 768px) {
+  footer {
+    font-size: 15px;
+    margin-top: 200px;
+  }
 }
 
 footer a {
