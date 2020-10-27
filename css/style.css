@@ -3,7 +3,13 @@
 /* Navbar Styles */
 
 /* Navbar Styles */
+body {
+  margin: 0px;
+}
 
+.content {
+  padding: 0px;
+}
 nav img {
   border-radius: 2px;
 }
